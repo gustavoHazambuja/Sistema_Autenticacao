@@ -4,7 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-import com.example.Exception.CodigoException;
 import com.example.Exception.EmailException;
 import com.example.Exception.SenhaException;
 
@@ -21,10 +20,22 @@ public class Autenticacao {
         return usuarios;
     }
 
+    public void showUsuarios(){
+
+        if(usuarios.isEmpty()){
+            throw new SenhaException("Nenhum usuário cadastrado.");
+        }
+
+        usuarios.entrySet().stream()
+            .forEach(System.out::println);
+    }
+
     public void criarCadastro(){
         System.out.println("Informe um email:");
         String email = dados.nextLine();
+        existeEmail(email);
         verificaFormatoEmail(email);
+        
 
         System.out.println("Informe uma senha:");
         String senha = dados.nextLine();
@@ -56,6 +67,16 @@ public class Autenticacao {
 
         // System.out.println("Acesso autorizado com dois fatores.");
         
+    }
+
+    private void existeEmail(String email){
+
+        boolean isExist = usuarios.entrySet().stream()
+            .anyMatch(e -> e.getKey().equals(email));
+
+        if(isExist){
+            throw new EmailException("Email já cadastrado, efetue o login.");
+        }    
     }
 
     private void verificarSenha(String senha){

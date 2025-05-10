@@ -23,7 +23,8 @@ public class Programm {
     
             System.out.println("(1) Criar cadastro");
             System.out.println("(2) Fazer login");
-            System.out.println("(3) Sair");
+            System.out.println("(3) Listar usuários");
+            System.out.println("(4) Sair");
             opcao = dados.nextInt();
             dados.nextLine();
 
@@ -48,7 +49,15 @@ public class Programm {
                         System.out.println("Erro. " + e.getMessage());
                     }
                     break;
+
                 case 3:
+                    try{
+                        autenticacao.showUsuarios();
+                    }catch(SenhaException e){
+                        System.out.println(e.getMessage());
+                    }   
+                    break; 
+                case 4:
                     System.out.println("Saindo...");
                     break;
 
@@ -58,7 +67,7 @@ public class Programm {
             }
 
 
-        }while(opcao!= 3);
+        }while(opcao!= 4);
 
         dados.close();
     }
