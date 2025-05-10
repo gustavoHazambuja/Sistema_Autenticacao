@@ -2,6 +2,7 @@ package com.example.Application;
 
 import java.util.Scanner;
 
+import com.example.Exception.CodigoException;
 import com.example.Exception.EmailException;
 import com.example.Exception.SenhaException;
 import com.example.Service.Autenticacao;
@@ -32,6 +33,8 @@ public class Programm {
                         autenticacao.criarCadastro();
                     }catch(SenhaException e){
                         System.out.println("Erro. " + e.getMessage());
+                    }catch(EmailException e){
+                        System.out.println("Erro. " + e.getMessage());
                     }                    
                     break;
                 case 2:
@@ -40,6 +43,8 @@ public class Programm {
                     }catch(EmailException e){
                         System.out.println("Erro. " + e.getMessage());
                     }catch(SenhaException e){
+                        System.out.println("Erro. " + e.getMessage());
+                    }catch(CodigoException e){
                         System.out.println("Erro. " + e.getMessage());
                     }
                     break;
