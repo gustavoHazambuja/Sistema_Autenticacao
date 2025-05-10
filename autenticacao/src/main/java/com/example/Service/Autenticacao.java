@@ -56,6 +56,7 @@ public class Autenticacao {
         verificarSenha(senha);
 
         System.out.println("Login efetuado.");
+        
 
         // String codigo = String.valueOf((int)(Math.random() * 900000) + 100000);
         // EmailService.enviarCodigo(senha, codigo);
