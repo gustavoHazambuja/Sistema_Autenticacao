@@ -1,0 +1,42 @@
+[33mcommit 706dfff26cafb678833274cad10e57abe0e702c7[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Gustavo Henrique <guazambujinha@gmail.com>
+Date:   Sat May 10 16:13:39 2025 -0300
+
+    Atualização no cadastro
+
+[33mcommit 3f76688c91aaefb1d62ba96a1abf4093ddab6b05[m
+Author: Gustavo Henrique <guazambujinha@gmail.com>
+Date:   Sat May 10 15:52:08 2025 -0300
+
+    Atualização validação de Senha
+
+[33mcommit 6f2f9e34ade58494900de4d7855a7621d32908d8[m
+Author: Gustavo Henrique <guazambujinha@gmail.com>
+Date:   Wed May 7 16:05:08 2025 -0300
+
+    Autenticação funcionando
+
+[33mcommit 7645af5640b2ab7bf360dcb383b3e731efee508a[m
+Merge: b0ed830 cef7a86
+Author: Gustavo Henrique <guazambujinha@gmail.com>
+Date:   Mon May 5 17:09:05 2025 -0300
+
+    estrutura feita
+
+[33mcommit b0ed8304dcc0d74538746befdfff0bbf06c3e922[m
+Author: Gustavo Henrique <guazambujinha@gmail.com>
+Date:   Mon May 5 17:07:58 2025 -0300
+
+    estrutura feita
+
+[33mcommit cef7a8668378bba22fda6a47601f2fdffbdd91f1[m
+Author: Gustavo Henrique Azambuja <guazambujinha@gmail.com>
+Date:   Mon May 5 16:34:55 2025 -0300
+
+    Create LICENSE
+
+[33mcommit c9c86442adf0617c429f367e87048220466d16f9[m
+Author: Gustavo Henrique <guazambujinha@gmail.com>
+Date:   Mon May 5 16:33:46 2025 -0300
+
+    fist commit
